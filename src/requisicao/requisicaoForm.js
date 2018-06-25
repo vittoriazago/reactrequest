@@ -25,7 +25,7 @@ class FormularioRequisicao extends Component {
     }
 		return (
       <div> 
-        <form className="pure-form pure-form-aligned" onSubmit={handleSubmit} style={boxBody}>
+        <form className="pure-form pure-form-aligned" onSubmit={handleSubmit}>
           <div className='box-body'>
             <div className='col-xs-12'>
               <fieldset>

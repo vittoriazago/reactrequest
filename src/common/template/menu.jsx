@@ -5,16 +5,14 @@ import MenuTree from './menuTree'
 export default props => (
     <ul className='sidebar-menu'>
         <MenuTree label='Inicio' icon='home'> 
-            <MenuItem path='/salvar'
-                label='Salvar' icon='save' />
             <MenuItem path='/importar'
-                label='Importar' icon='import' />
+                label='Importar' icon='upload' />
             <MenuItem path='/exportar'
-                label='Exportar' icon='export' />
+                label='Exportar' icon='download' />
         </MenuTree>    
         <MenuTree label='API' icon='edit'>       
-            <MenuItem path='configuracoes' label='Configurações' icon='conf' />
-            <MenuItem path='requisicao' label='Requisicao' icon='dashboard' />
+            <MenuItem path='configuracoes' label='Configurações' icon='cogs' />
+            <MenuItem path='requisicao' label='Requisicao' icon='connectdevelop' />
         </MenuTree>
     </ul>
 )
