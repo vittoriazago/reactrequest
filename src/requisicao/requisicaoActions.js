@@ -28,6 +28,7 @@ export function remove(values) {
 
 function submit(values, method) {
     return dispatch => {
+        values.responseBody = ''
         const id = values._id ? values._id : ''
         axios[method](`${BASE_URL}/${id}`, values)
             .then(resp => {
@@ -38,7 +39,7 @@ function submit(values, method) {
                 
             })
             .catch(e => {
-                e.response.data.errors.forEach(error => toastr.error('Erro', error))
+                toastr.error('Erro', 'Verifique a resposta')
                 initialize('requisicaoForm', e.response)
 
             })
